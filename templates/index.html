@@ -1,14 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flask Azure SQL App</title>
+</head>
 <body>
-
-<h1>Deepika 1</h1>
-<h2>Deepika 2</h2>
-<h3>Deepika 3</h3>
-<h4>Deepika 4</h4>
-<h5>Deepika 5</h5>
-<h6>Deepika 6</h6>
-
+    <h1>Enter User Data</h1>
+    <form action="/save" method="post">
+        <label for="first_name">First Name:</label>
+        <input type="text" id="first_name" name="first_name" required><br>
+        <label for="last_name">Last Name:</label>
+        <input type="text" id="last_name" name="last_name" required><br>
+        <input type="submit" value="Save Data">
+    </form>
+    <br>
+    <a href="/get_data">View Data</a>
 </body>
 </html>
-
